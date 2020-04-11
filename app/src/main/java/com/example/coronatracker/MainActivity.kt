@@ -8,13 +8,15 @@ import androidx.annotation.RequiresApi
 
 class MainActivity : AppCompatActivity() {
     private var bleServer: BLEServer? = null
+    private var bleClient: BLEClient?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onStart() {
         super.onStart()
 
